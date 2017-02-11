@@ -1,7 +1,7 @@
 
-if RUBY_PLATFORM[/mingw/]  && Sketchup.is_64bit? && RUBY_VERSION == "2.0.0"
+if RUBY_PLATFORM[/mingw/]  && Sketchup.is_64bit?
 
-   require_relative  "jf_import_layers/2.0.0/x64/JF_ImportLayers.so"
+   require "#{File.dirname(__FILE__)}/jf_import_layers/#{RUBY_VERSION}/x64/JF_ImportLayers"
 
    module JF
       module ImportLayers
