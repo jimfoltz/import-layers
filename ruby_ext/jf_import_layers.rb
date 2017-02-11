@@ -1,5 +1,5 @@
 
-if RUBY_PLATFORM[/mswin/]  && Sketchup.version.to_i >= 15 && Sketchup.is_64bit? && RUBY_VERSION == "2.0.0"
+if RUBY_PLATFORM[/mingw/]  && Sketchup.is_64bit? && RUBY_VERSION == "2.0.0"
 
    require_relative  "jf_import_layers/2.0.0/x64/JF_ImportLayers.so"
 
